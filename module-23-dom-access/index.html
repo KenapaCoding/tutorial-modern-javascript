@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Access</title>
+</head>
+<body>
+    <h1 id="title">Ini title</h1>
+    <p class="text">ini text</p>
+    <ul>
+        <li class="text">list 1</li>
+        <li class="text">list 2</li>
+        <li>list 3</li>
+    </ul>
+    <script>
+       // getElementbyId
+       console.log(document.getElementById("title"))
+       //getElementsbyClassname
+       const texts = document.getElementsByClassName('text')
+    //    console.log(texts[1])
+        //getElementsbyTagName
+        const li = document.getElementsByTagName('li')
+        console.log(li)
+        //querySelector
+        const liText = document.querySelector('li.text')
+        console.log(liText)
+        //querySelectorAll
+        const all = document.querySelectorAll('li.text')
+        console.log(all)
+    </script>
+</body>
+</html>
